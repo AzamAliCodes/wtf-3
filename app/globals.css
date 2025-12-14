@@ -23,23 +23,21 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
-<<<<<<< HEAD
 
   background-image: url("/bg.svg");
-  background-repeat: no-repeat;   /* prevents repeating */
-  background-size: cover;         /* fills the full window */
-  background-position: center;    /* centers the image */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
-
 
 /* Container to give a 3D perspective */
 .loader-perspective {
-  perspective: 1000px; /* increase for less dramatic depth, decrease for stronger */
+  perspective: 1000px;
   -webkit-perspective: 1000px;
-  display: inline-block; /* keeps sizing tidy */
+  display: inline-block;
 }
 
-/* The element that flips */
+/* 3D flip animation */
 @keyframes flip3d {
   0% {
     transform: rotateY(0deg);
@@ -56,23 +54,19 @@ body {
   display: inline-block;
   transform-style: preserve-3d;
   -webkit-transform-style: preserve-3d;
-  animation: flip3d 1.0s cubic-bezier(.4,.0,.2,1) infinite; /* good speed + easing */
+  animation: flip3d 1s cubic-bezier(.4,.0,.2,1) infinite;
   will-change: transform;
-  /* Optional: add slight scale for more punch */
-  /* animation: flip3d 1.0s cubic-bezier(.4,.0,.2,1) infinite, scalePulse 2s ease-in-out infinite; */
 }
 
-/* Make sure the actual image doesn't show during backface */
 .loader-img {
-  display: block; /* important to avoid inline gaps */
+  display: block;
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
-  transform: translateZ(0); /* trigger GPU compositing */
+  transform: translateZ(0);
   width: 100%;
   height: auto;
 }
 
-/* Optional: a subtle shadow to make flip feel 3D */
 .flip-card::after {
   content: "";
   position: absolute;
@@ -83,11 +77,10 @@ body {
   z-index: -1;
 }
 
-/* Ensure wrapper sizing — change to your preferred size */
 .loader-perspective,
 .flip-card {
-  width: 300px;  /* matches Image width prop */
-  height: 300px; /* matches Image height prop */
+  width: 300px;
+  height: 300px;
   position: relative;
 }
 
@@ -105,6 +98,4 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-=======
->>>>>>> origin/main
 }
