@@ -8,8 +8,8 @@ import RotatingBackground from "@/components/RotatingBackground";
 // Define shared styles for buttons and tags for consistency
 const buttonBase = "h-[48px] px-8 rounded-full text-base font-semibold transition-all duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-black flex items-center justify-center [text-shadow:none]";
 const buttonPrimary = `${buttonBase} bg-lime-400 text-black active:bg-lime-600 hover:scale-105 hover:shadow-2xl hover:shadow-lime-500/70 hover:brightness-110`;
-const buttonSecondary = `${buttonBase} border-2 border-white text-white bg-transparent active:bg-white/20 hover:bg-white hover:text-black`;
-const tagPill = "h-[48px] px-8 border-2 border-white text-white bg-white/10 text-base font-semibold rounded-full flex items-center focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-black hover:bg-red-600 hover:border-red-600 hover:text-white transition-all duration-300 [text-shadow:none]";
+const buttonSecondary = `${buttonBase} border-2 border-white text-white bg-transparent active:bg-white/20 hover:bg-white hover:text-black hover:shadow-2xl hover:shadow-white/70`;
+const tagPill = "h-[48px] px-8 border-2 border-white text-white bg-white/10 text-base font-semibold rounded-full flex items-center focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-black hover:bg-red-600 hover:border-red-600 hover:text-white transition-all duration-300 [text-shadow:none] hover:shadow-2xl hover:shadow-red-500/70";
 
 export default function Home() {
     const [loading, setLoading] = useState(true);
@@ -57,7 +57,7 @@ export default function Home() {
                                 href="https://htbchennai.in"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="group relative px-6 py-2 text-sm font-semibold border border-red-500 rounded-md transition-all duration-300 overflow-hidden hover:border-red-600 [text-shadow:none]"
+                                className="group relative px-6 py-2 text-sm font-semibold border border-red-500 rounded-md transition-all duration-300 overflow-hidden hover:border-red-600 hover:shadow-2xl hover:shadow-red-500/70 [text-shadow:none]"
                             >
                                 <span className="relative z-10 transition-colors duration-300 group-hover:text-white">
                                     About Us
