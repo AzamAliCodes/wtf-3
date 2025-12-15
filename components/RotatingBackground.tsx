@@ -29,7 +29,7 @@ export default function RotatingBackground() {
                     style={{
                         backgroundImage: `url(${src})`,
                         opacity: index === currentImageIndex ? 1 : 0,
-                        filter: 'blur(1px) brightness(0.9)',
+                        filter: 'blur(0px) brightness(0.9)',
                     }}
                 />
             ))}

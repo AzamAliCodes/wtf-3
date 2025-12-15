@@ -109,8 +109,8 @@ export default function Home() {
                                     <div className="space-y-3 text-sm text-gray-300">
                                         <p><span className="font-semibold text-gray-100">Cast:</span> Only the sharpest minds will complete the mission.</p>
                                         <p><span className="font-semibold text-gray-100">Genre:</span> Cybersecurity, CTF, Ethical Hacking, Jeopardy</p>
-                                        <p><span className="font-semibold text-gray-100">Venue:</span> Mini Hall 2, SRM</p>
-                                        <p><span className="font-semibold text-gray-100">Date:</span> December 15th, 2025</p>
+                                        <p><span className="font-semibold text-gray-100">Venue:</span> Mini Hall 2, SRM IST</p>
+                                        <p><span className="font-semibold text-gray-100">Date:</span> January 27th, 2026</p>
                                         <p><span className="font-semibold text-gray-100">Time:</span> 10:00 AM IST</p>
                                     </div>
                                 </div>
