@@ -15,7 +15,7 @@ export default function RotatingBackground() {
     useEffect(() => {
         const interval = setInterval(() => {
             setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
-        }, 4000); // Change image every 4 seconds (3s for fade + 1s visible)
+        }, 2700); // Change image every 2.7 seconds
 
         return () => clearInterval(interval);
     }, []);
@@ -25,7 +25,7 @@ export default function RotatingBackground() {
             {images.map((src, index) => (
                 <div
                     key={src}
-                    className="absolute inset-0 w-full h-full bg-cover bg-center transition-opacity duration-3000 ease-in-out"
+                    className="absolute inset-0 w-full h-full bg-cover bg-center transition-opacity duration-1000 ease-in-out"
                     style={{
                         backgroundImage: `url(${src})`,
                         opacity: index === currentImageIndex ? 1 : 0,
