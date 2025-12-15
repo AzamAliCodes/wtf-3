@@ -112,6 +112,7 @@ export default function Home() {
                                         <p><span className="font-semibold text-gray-100">Venue:</span> Mini Hall 2, SRM IST</p>
                                         <p><span className="font-semibold text-gray-100">Date:</span> January 27th, 2026</p>
                                         <p><span className="font-semibold text-gray-100">Time:</span> 10:00 AM IST</p>
+                                        <p><span className="font-semibold text-gray-100">Pre-Requisites:</span> Laptop fully charged with VMware or VirtualBox preinstalled & a security-focused Operating System (recommended: Kali Linux).</p>
                                     </div>
                                 </div>
                             </div>
