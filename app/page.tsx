@@ -19,11 +19,12 @@ export default function Home() {
             {loading && <NetflixLoader onComplete={() => setLoading(false)} />}
 
             {!loading && (
-                <div className="relative min-h-screen overflow-hidden font-mono">
+                <div className="relative h-full flex flex-col font-mono">
                     <RotatingBackground />
-
+                    {/* NEW Gradient Overlay */}
+                    <div className="absolute inset-x-0 bottom-0 h-2/5 bg-gradient-to-t from-black to-transparent z-0"></div>
                     {/* Header with Logo and About Button */}
-                    <header className="absolute top-0 left-0 right-0 flex items-center justify-between p-4 lg:p-8 z-30 [text-shadow:0_2px_4px_rgba(0,0,0,0.8)]">
+                    <header className="relative z-30 flex-none flex items-center justify-between p-4 lg:p-8 [text-shadow:0_2px_4px_rgba(0,0,0,0.8)]">
                         {/* Logo - Top Left */}
                         <div className="flex items-center">
                             <Link href="/" className="transition-opacity hover:opacity-80">
@@ -46,12 +47,12 @@ export default function Home() {
                                 <span className="text-sm font-medium text-white/50">|</span>
                                 <span className="text-sm font-medium text-white/70">FLAGSHIP EVENT</span>
                             </div>
-                            <div className="hidden lg:block h-4 w-[2px] bg-white" />
+                            <div className="hidden lg:block h-4 w-[2px] bg-white/50" />
                             <p className="text-lg md:text-xl font-bold">
                                 <span className="text-red-500">WTF</span>
                                 <span className="text-white"> Season 3</span>
                             </p>
-                            <div className="hidden sm:block h-4 w-[2px] bg-white" />
+                            <div className="hidden sm:block h-4 w-[2px] bg-white/50" />
                             <Link
                                 href="https://htbchennai.in"
                                 target="_blank"
@@ -67,7 +68,7 @@ export default function Home() {
                     </header>
 
                     {/* MAIN OVERLAY CONTAINER */}
-                    <main className="relative z-20 flex min-h-screen w-full max-w-7xl mx-auto px-4 sm:px-8 pt-32 pb-16 lg:items-center lg:justify-center lg:py-8 [text-shadow:0_2px_4px_rgba(0,0,0,0.8)]">
+                    <main className="relative z-20 w-full max-w-7xl mx-auto px-4 sm:px-8 py-8 lg:py-8 [text-shadow:0_2px_4px_rgba(0,0,0,0.8)] overflow-y-auto flex-grow">
                         <div className="flex flex-col gap-16 lg:gap-24">
                             {/* Main Content Grid */}
                             <div className="grid grid-cols-1 lg:grid-cols-5 gap-12 lg:gap-16 items-center">
@@ -101,10 +102,10 @@ export default function Home() {
                                     <div className="flex flex-col gap-2">
                                         <h3 className="text-2xl font-sans font-bold text-white">Synopsis</h3>
                                         <p className="text-base leading-relaxed text-gray-300">
-                                            An elite cybersecurity heist awaits in our CTF event. Participants will solve real-world security challenges across multiple domains, breaking into systems, uncovering vulnerabilities, and extracting hidden flags.
+                                            An elite cybersecurity heist awaits in our CTF event. Participants will solve real-world security challenges across multiple domains, breaking into systems,oconfiguring vulnerabilities, and extracting hidden flags.
                                         </p>
                                     </div>
-                                    <div className="h-[4px] w-full bg-white"></div>
+                                    <div className="h-[4px] w-full bg-white/50"></div>
                                     <div className="space-y-3 text-sm text-gray-300">
                                         <p><span className="font-semibold text-gray-100">Cast:</span> Only the sharpest minds will complete the mission.</p>
                                         <p><span className="font-semibold text-gray-100">Genre:</span> Cybersecurity, CTF, Ethical Hacking, Jeopardy</p>
@@ -116,6 +117,15 @@ export default function Home() {
                             </div>
                         </div>
                     </main>
+
+                    {/* FOOTER with animated dots */}
+                    <footer className="relative z-10 w-full py-8 flex justify-center flex-none">
+                        <div className="flex space-x-3">
+                            <div className="w-3 h-3 bg-red-500 rounded-full animate-pulse-dot" style={{ animationDelay: '0s' }}></div>
+                            <div className="w-3 h-3 bg-red-500 rounded-full animate-pulse-dot" style={{ animationDelay: '0.2s' }}></div>
+                            <div className="w-3 h-3 bg-red-500 rounded-full animate-pulse-dot" style={{ animationDelay: '0.4s' }}></div>
+                        </div>
+                    </footer>
                 </div>
             )}
         </>
