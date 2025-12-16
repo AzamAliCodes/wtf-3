@@ -98,21 +98,25 @@ export default function Home() {
                                 </div>
 
                                 {/* Right Side (takes 2 cols) */}
-                                <div className="lg:col-span-2 flex flex-col gap-6 self-start">
-                                    <div className="flex flex-col gap-2">
-                                        <h3 className="text-2xl font-sans font-bold text-white">Synopsis</h3>
-                                        <p className="text-base leading-relaxed text-gray-300">
-                                            An elite cybersecurity heist awaits in our CTF event. Participants will solve real-world security challenges across multiple domains, breaking into systems,oconfiguring vulnerabilities, and extracting hidden flags.
-                                        </p>
+                                <div className="lg:col-span-2 flex flex-col gap-4 self-start">
+                                    <div className="bg-black/10 backdrop-blur-lg p-1 rounded-lg border border-white/10">
+                                        <div className="flex flex-col gap-2">
+                                            <h3 className="text-2xl font-sans font-bold text-white">Synopsis</h3>
+                                            <p className="text-base leading-relaxed text-gray-300">
+                                                An elite cybersecurity heist awaits in our CTF event. Participants will solve real-world security challenges across multiple domains, breaking into systems,oconfiguring vulnerabilities, and extracting hidden flags.
+                                            </p>
+                                        </div>
                                     </div>
                                     <div className="h-[4px] w-full bg-white/50"></div>
-                                    <div className="space-y-3 text-sm text-gray-300">
-                                        <p><span className="font-semibold text-gray-100">Cast:</span> Only the sharpest minds will complete the mission.</p>
-                                        <p><span className="font-semibold text-gray-100">Genre:</span> Cybersecurity, CTF, Ethical Hacking, Jeopardy</p>
-                                        <p><span className="font-semibold text-gray-100">Venue:</span> Mini Hall 2, SRM IST</p>
-                                        <p><span className="font-semibold text-gray-100">Date:</span> January 27th, 2026</p>
-                                        <p><span className="font-semibold text-gray-100">Time:</span> 10:00 AM IST</p>
-                                        <p><span className="font-semibold text-gray-100">Pre-Requisites:</span> Laptop fully charged with VMware or VirtualBox preinstalled & a security-focused Operating System (recommended: Kali Linux).</p>
+                                    <div className="bg-black/10 backdrop-blur-lg p-1 rounded-lg border border-white/10">
+                                        <div className="space-y-3 text-sm text-gray-300">
+                                            <p><span className="font-semibold text-gray-100">Cast:</span> Only the sharpest minds will complete the mission.</p>
+                                            <p><span className="font-semibold text-gray-100">Genre:</span> Cybersecurity, CTF, Ethical Hacking, Jeopardy</p>
+                                            <p><span className="font-semibold text-gray-100">Venue:</span> Mini Hall 2, SRM IST</p>
+                                            <p><span className="font-semibold text-gray-100">Date:</span> January 27th, 2026</p>
+                                            <p><span className="font-semibold text-gray-100">Time:</span> 10:00 AM IST</p>
+                                            <p><span className="font-semibold text-gray-100">Pre-Requisites:</span> Laptop fully charged with VMware or VirtualBox preinstalled & a security-focused Operating System (recommended: Kali Linux).</p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
