@@ -2,11 +2,11 @@
 import { useState, useEffect } from 'react';
 
 const BACKGROUND_IMAGES = [
-    '/bg.svg',
-    '/bg-2.jpg',
-    '/bg-3.jpg',
-    '/bg-4.jpg',
-    '/bg-5.jpg',
+    '/bg-1.webp',
+    '/bg-2.webp',
+    '/bg-3.webp',
+    '/bg-4.webp',
+    '/bg-5.webp',
 ];
 
 export default function RotatingBackground() {
