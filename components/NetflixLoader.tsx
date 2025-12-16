@@ -2,7 +2,11 @@
 import { useState, useEffect } from "react";
 import styles from "./NetflixLoader.module.css";
 
-export default function NetflixLoader({ onComplete }) {
+interface NetflixLoaderProps {
+  onComplete?: () => void;
+}
+
+export default function NetflixLoader({ onComplete }: NetflixLoaderProps) {
   const [lines, setLines] = useState([]);
 
   useEffect(() => {
@@ -36,7 +40,7 @@ export default function NetflixLoader({ onComplete }) {
 
     // 3. Cleanup timer
     const timer = setTimeout(() => {
-      if (onComplete) onComplete();
+      onComplete?.();
     }, 2300); // Sync with end of ribbon animation (N ends at 1.5s, Lines end at 1.5s + 0.8s = 2.3s)
 
     return () => clearTimeout(timer);
