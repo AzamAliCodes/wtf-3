@@ -1,3 +1,4 @@
+import BackgroundEffects from "@/components/BackgroundEffects";
 import type { Metadata } from "next";
 import { Press_Start_2P, Roboto_Mono } from "next/font/google";
 import "./globals.css";
@@ -30,6 +31,7 @@ export default function RootLayout({
       <body
         className={`${pixelFont.variable} ${monoFont.variable} antialiased`}
       >
+        <BackgroundEffects />
         {children}
       </body>
     </html>

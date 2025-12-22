@@ -75,7 +75,9 @@ export default function Home() {
                                 {/* Left Side (takes 3 cols) */}
                                 <div className="lg:col-span-3 flex flex-col">
                                     <div>
-                                        <h1 className="text-4xl lg:text-5xl font-sans font-bold text-white leading-loose">WHERE THE FLAG</h1>
+                                        <h1 className="text-4xl lg:text-5xl font-sans font-bold text-white leading-loose">
+                                        <span className="glitch" data-text="WHERE">WHERE</span> <span className="glitch" data-text="THE">THE</span> <span className="glitch" data-text="FLAG">FLAG</span>
+                                        </h1>
                                         <h2 className="mt-2 text-2xl lg:text-3xl font-sans font-bold text-red-500 leading-relaxed">Hack The Box Chennai</h2>
                                     </div>
                                     <p className="mt-6 text-lg text-gray-300 max-w-xl">One Heist. One Flag. Total Control.</p>
