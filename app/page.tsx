@@ -40,18 +40,19 @@ export default function Home() {
                         </div>
 
                         {/* Right Aligned Nav Items */}
-                        <div className="flex items-center gap-4 md:gap-8">
+                        <div className="flex items-center gap-4 md:gap-8 header-interactive-group">
                             {/* Hide on smaller screens for a cleaner look */}
                             <div className="hidden lg:flex items-center gap-4">
-                                <span className="text-sm font-medium text-white/70">HTB Chennai</span>
+                                <span className="text-sm font-medium text-white/70 htb-text">HTB</span>
+                                <span className="text-sm font-medium text-white/70 chennai-text"> Chennai</span>
                                 <span className="text-sm font-medium text-white/50">|</span>
-                                <span className="text-sm font-medium text-white/70">FLAGSHIP EVENT</span>
+                                <span className="text-sm font-medium text-white/70 flagship-text">FLAGSHIP EVENT</span>
                             </div>
                             <div className="hidden lg:block h-4 w-[2px] bg-white/50" />
-                            <p className="text-lg md:text-xl font-bold">
-                                <span className="text-red-500">WTF</span>
-                                <span className="text-white"> Season 3</span>
-                            </p>
+                            <Link href="/" className="text-lg md:text-xl font-bold">
+                                <span className="text-red-500 wtf-text">WTF</span>
+                                <span className="text-white season-text"> Season 3</span>
+                            </Link>
                             <div className="hidden sm:block h-4 w-[2px] bg-white/50" />
                             <Link
                                 href="https://htbchennai.in"
@@ -101,7 +102,7 @@ export default function Home() {
 
                                 {/* Right Side (takes 2 cols) */}
                                 <div className="lg:col-span-2 flex flex-col gap-4 self-start">
-                                    <div className="bg-black/10 backdrop-blur-lg p-1 rounded-lg border border-white/10">
+                                    <div className="info-box bg-black/10 backdrop-blur-lg p-1 rounded-lg border border-white/10">
                                         <div className="flex flex-col gap-2">
                                             <h3 className="text-2xl font-sans font-bold text-white">Synopsis</h3>
                                             <p className="text-base leading-relaxed text-gray-300">
@@ -110,7 +111,7 @@ export default function Home() {
                                         </div>
                                     </div>
                                     <div className="h-[4px] w-full bg-white/50"></div>
-                                    <div className="bg-black/10 backdrop-blur-lg p-1 rounded-lg border border-white/10">
+                                    <div className="info-box bg-black/10 backdrop-blur-lg p-1 rounded-lg border border-white/10">
                                         <div className="space-y-3 text-sm text-gray-300">
                                             <p><span className="font-semibold text-gray-100">Cast:</span> Only the sharpest minds will complete the mission.</p>
                                             <p><span className="font-semibold text-gray-100">Genre:</span> Cybersecurity, CTF, Ethical Hacking, Jeopardy</p>
