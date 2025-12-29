@@ -15,7 +15,7 @@ const HackerCursor = () => {
             return;
         }
 
-        const handleMouseMove = (e) => {
+        const handleMouseMove = (e: MouseEvent) => {
             setPosition({ x: e.clientX, y: e.clientY });
         };
 
