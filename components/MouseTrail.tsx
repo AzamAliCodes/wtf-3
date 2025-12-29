@@ -3,7 +3,14 @@
 import { useState, useEffect } from 'react';
 
 const MouseTrail = () => {
-    const [particles, setParticles] = useState([]);
+    interface Particle {
+    id: number;
+    x: number;
+    y: number;
+    character: string;
+}
+
+const [particles, setParticles] = useState<Particle[]>([]);
     const [isClient, setIsClient] = useState(false);
 
     useEffect(() => {
