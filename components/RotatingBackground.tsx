@@ -7,6 +7,9 @@ const BACKGROUND_IMAGES = [
     '/bg-3.webp',
     '/bg-4.webp',
     '/bg-5.webp',
+    '/bg-6.webp',
+    '/bg-7.webp',
+    '/bg-8.webp',
 ];
 
 export default function RotatingBackground() {
