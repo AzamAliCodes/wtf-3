@@ -1,8 +1,10 @@
 .ai-matrix-loader {
   width: 120px;
   height: 160px;
-  margin: 30px auto;
-  position: relative;
+  position: fixed; /* Use fixed positioning for viewport centering */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Center horizontally and vertically */
   perspective: 800px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
